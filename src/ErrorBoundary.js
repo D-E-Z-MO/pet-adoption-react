@@ -24,9 +24,8 @@ class ErrorBoundary extends Component {
         </h2>
       );
      }
-     
     }
-  }
+  
 }
 
 export default ErrorBoundary;

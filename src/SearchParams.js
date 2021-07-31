@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import ThemeContext from './ThemeContext'
 import useBreedList from './useBreedList';
 import Results from "./results";
+// eslint-disable-next-line no-unused-vars
 import Pet from "./pet"
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"]

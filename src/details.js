@@ -3,9 +3,6 @@ import { withRouter } from 'react-router-dom';
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 
-
-
-
 class Details extends Component {
   state = { loading: true }
   

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import SearchParams from "./SearchParams";
 import Details from "./details";
 import ThemeContext from './ThemeContext'
+import { useState } from "react";
 
 const App = () => {
   const theme = useState("darkBlue")
