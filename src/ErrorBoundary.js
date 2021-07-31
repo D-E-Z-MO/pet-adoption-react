@@ -8,12 +8,9 @@ class ErrorBoundary extends Component {
   }
   componentDidCatch(error, info) {
     console.error("ErrorBoundary caught an error", error, info);
+    setTimeout(() => this.setState({ redirect: true }), 5000)
   }
-  componentDidUpdate() {
-    if (this.state.hasError) {
-      setTimeout(() => this.setState({ redirect: true }), 5000);
-    }
-  }
+
   
 
   render() {
@@ -27,9 +24,8 @@ class ErrorBoundary extends Component {
         </h2>
       );
      }
+     
     }
-
-    return this.props.children;
   }
 }
 
